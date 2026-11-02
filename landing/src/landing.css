@@ -1,0 +1,184 @@
+.ls-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.ls-sec {
+    padding: 104px 0;
+}
+.ls-eyebrow {
+    font: 600 0.72rem var(--font-mono);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-green);
+    margin-bottom: 16px;
+}
+.ls-h2 {
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    max-width: 640px;
+    margin-bottom: 14px;
+}
+.ls-sub {
+    color: var(--text-secondary);
+    max-width: 540px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+}
+.ls-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+.ls-card:hover {
+    border-color: rgba(0, 255, 136, 0.28);
+}
+.ls-card h3 {
+    font-size: 1.05rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+}
+.ls-card p {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin: 0;
+}
+.ls-mono {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+}
+.ls-pre {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 16px;
+    overflow-x: auto;
+    white-space: pre;
+}
+.ls-bento {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+.ls-s2 {
+    grid-column: span 2;
+}
+.ls-s3 {
+    grid-column: span 3;
+}
+.ls-s4 {
+    grid-column: span 4;
+}
+.ls-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--border);
+}
+.ls-step {
+    padding: 28px 28px 8px 0;
+}
+.ls-step b {
+    font: 600 0.8rem var(--font-mono);
+    color: var(--accent-green);
+}
+.ls-step h3 {
+    margin: 12px 0 8px;
+    font-size: 1.1rem;
+}
+.ls-step p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin: 0;
+}
+.ls-chip {
+    font: 600 0.74rem var(--font-mono);
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+.ls-chip.on {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+    background: rgba(0, 255, 136, 0.08);
+}
+.ls-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+.ls-faq details {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+}
+.ls-faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+.ls-faq summary::-webkit-details-marker {
+    display: none;
+}
+.ls-faq summary:after {
+    content: "+";
+    float: right;
+    color: var(--accent-green);
+}
+.ls-faq details[open] summary:after {
+    content: "–";
+}
+.ls-faq p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 10px 0 0;
+}
+.ls-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ls-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+.ls-list code {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--text-primary);
+}
+@media (max-width: 860px) {
+    .ls-s2,
+    .ls-s3,
+    .ls-s4 {
+        grid-column: span 6;
+    }
+    .ls-steps,
+    .ls-two,
+    .ls-hero-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .ls-sec {
+        padding: 72px 0;
+    }
+    .ls-step {
+        padding-right: 0;
+    }
+}
